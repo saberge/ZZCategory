@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ZZCategory_Tests' do
+  pod 'ZZCategory', :path => '../'
+  
+  
+end
