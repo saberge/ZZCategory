@@ -23,4 +23,6 @@
  */
 - (NSString *)MD5;
 
+- (BOOL )isPhoneNum;
+
 @end

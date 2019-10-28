@@ -23,4 +23,11 @@
             result[12], result[13], result[14], result[15]
             ];
 }
+
+- (BOOL)isPhoneNum
+{
+    NSString * phone =@"^1([3-9]\\d{9}$)";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phone];
+    return [phoneTest evaluateWithObject:self];
+}
 @end
